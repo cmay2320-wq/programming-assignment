@@ -1,0 +1,40 @@
+{
+  "users": {
+    "user_1": {
+      "name": "cj",
+      "surname": "may",
+      "salt": "d04d01fdf08aa54d",
+      "password": "0b1caea6baa9c56591656c9a41440eeca3cccb8aa0440c86232d0c6bed445aec",
+      "failed attempts": 0,
+      "locked until": 0
+    }
+  },
+  "accounts": {
+    "account_1": {
+      "owner": "user_1",
+      "account type": "savings",
+      "account number": "2736452637",
+      "bin/id": "10111"
+    }
+  },
+  "cards": {
+    "card_1": {
+      "account number": "2736452637",
+      "name on card": "cj",
+      "card number": "29376564453",
+      "expiary date": "01/30",
+      "CCV": "356",
+      "status": "active"
+    }
+  },
+  "account_balances": {
+    "2736452637": {
+      "available balance R": 2000,
+      "total balance": 2700,
+      "pending charges": 700
+    }
+  },
+  "transactions": {
+    "2736452637": []
+  }
+}
