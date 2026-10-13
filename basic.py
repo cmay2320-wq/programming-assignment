@@ -197,22 +197,37 @@ def bank_menu(number):
             print("Please choose a number from the menu.")
 
 
-# ---------------------------------------------------------------- start of the program
-while True:
-    print("\n=== WELCOME TO POLOBANK ===")
-    print("1. Login")
-    print("2. Create account")
-    print("0. Exit")
-    option = input("Choose: ")
 
-    if option == "1":
-        number = login()
-        if number is not None:
-            bank_menu(number)
-    elif option == "2":
-        create_account()
-    elif option == "0":
-        print("Goodbye!")
-        break
-    else:
-        print("Please choose 1, 2 or 0.")
+# ---------------------------------------------------------------- start of the program
+def main():
+    while True:
+        print("\n=== WELCOME TO POLOBANK ===")
+        print("1. Login")
+        print("2. Create account")
+        print("0. Exit")
+        option = input("Choose: ")
+
+        if option == "1":
+            number = login()
+            if number is not None:
+                bank_menu(number)
+        elif option == "2":
+            create_account()
+        elif option == "0":
+            print("Goodbye!")
+            break
+        else:
+            print("Please choose 1, 2 or 0.")
+
+if __name__ == "__main__":
+    try:
+        main()
+    except (KeyboardInterrupt, EOFError):
+        print("\ngoodbye")
+        
+    
+
+
+
+    
+        
